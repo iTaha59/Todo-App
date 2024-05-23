@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-Application</title>
+</head>
+<body>
+    <center>
+        <h1>TODO List</h1>
+        <input type="text" id="inp">
+        <button onclick="add()">Add</button>
+    </center>
+    <ul id="ul">
+
+    </ul>
+    <button onclick="del()">Delete All</button>
+    <script>
+        var getUl = document.getElementById('ul');
+        var getInp; 
+        var createLi;
+        var liText;
+        var createbtn;
+        function add(){
+            getInp = document.getElementById('inp')
+            createLi = document.createElement('li')
+            createbtn = document.createElement('button')
+            liText = document.createTextNode(getInp.value)
+            createLi.appendChild(liText)
+            createbtn.innerHTML = "Edit"
+            getUl.appendChild(createLi)
+            getUl.appendChild(createbtn)
+            getInp.value = ""
+        }
+        function del(){
+            document.getElementById("ul").innerHTML = ""
+        }
+    </script>
+</body>
+</html>

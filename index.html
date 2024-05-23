@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="heading" colspan="3">TODO LIST</th>
+        </tr>
+        <tr>
+            <th colspan="3"><input type="text" id="inp"></th>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><button onclick="add()">ADD</button></td>
+            <td style="text-align: center;"><button onclick="delAll()">DELETE ALL</button></td>
+            <td style="text-align: center;"><button onclick="edit()">EDIT</button></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <ol id="ol">
+                    <!-- <li>taha &emsp;<i class="fa-solid fa-circle-xmark" style="color: #ff0000;"></i></li>
+                    <li>zaid</li>
+                    <li>faiz</li> -->
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>

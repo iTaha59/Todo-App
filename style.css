@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.heading {
+    font-size: xx-large;
+}
+
+.heading, button, #inp, li{
+    font-family: serif;
+    font-style: italic;
+    
+}
+
+#inp {
+    width: 90%;
+    margin: 10px 0;
+    border: 2px solid black;
+    box-shadow: 0 0 3px red inset;
+}
+
+button {
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 10px red inset;
+    border-radius: 50px;
+}
